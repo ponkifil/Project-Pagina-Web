@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla General</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/plantillaichos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    <script type="text/javascript" src="css/bootstrap/js/bootstrap.bundle.js"></script>
+</head>
+    <!-- Barra del logo-->
+<body class="bodyP">
+  <nav class="navbar navbar-dark fixed-inicio nav bg-black">
+    <div class="container-fluid">
+      <div class=" nombre-pagina h3">
+        <a href="proyecto.html" class="text-decoration-none text-white">
+          <img src="img/logos/lotus-with-hands-1889661_1280.png" width="50" height="50">
+          BugWeb
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">BugWeb</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active letra" aria-current="page" href="file:///C:/xampp/htdocs/tecweb/proyecto/proyecto.html">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="BugWeb_Nosotros.html">Nosotros</a>
+            </li>
+            <a href="BugWeb_Login.html" target="_blank">
+              <button type="button" class="btn btn-outline-success">Ingresa el Insecto</button>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+</nav>
+
+    <!-- Contenedores de la info-->
+    <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3">
+    <!-- Imagenes Bichos-->
+            <div id="carouselExampleIndicators" class="carousel slide w-100 rounded-img">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Imagenes/eRinoceronte1.jpg" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagenes/eRinoceronte2.jpg" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagenes/eRinoceronte3.jpg" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+           </div>
+          </div>
+    <!-- Tarjeta de Información -->
+          <div class="col rounded-card">
+            <div class="p-3 ">
+                <div class="card rounded color3"  style="width: 35rem; ">
+                    <div class="card-body color1 texto" style="height: 27rem;">
+                      <h1 class="card-title " style="font-size: 70px;">Escarabajo</h1>
+                      <h6 class="card-subtitle mb-2 text-body-secondary " style="font-size: 50px;">Rinoceronte</h6>
+                      <p class="card-text h3" align="left" style="font-size: 25px;" > <b class="verde">Familia:</b> Dynastinae <br><br> <b class="verde">Longevidad:</b> 1 año <br><br> <b class="verde">Nombre cientifico: </b> Oryctes nasicornis <br><br> <b class="verde">Estado: </b>No protegida</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    <!-- Despliegue de información -->
+    <div class="container ">
+        <div class="accordion accordion-flush w-100 rounded" id="accordionFlushExample">
+
+            <div class="accordion-item color1 texto rounded">
+              <h2 class="accordion-header ">
+                <button class="accordion-button collapsed rounded color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Descripción física
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    El escarabajo rinoceronte es uno de los insectos más grandes del mundo, con una longitud que puede variar entre 2 y 13 centímetros, dependiendo de la especie. Su cuerpo robusto y ovalado está cubierto por un exoesqueleto resistente y brillante.<br>
+                  <br><b class="verde">Cuernos:</b> La característica más distintiva del escarabajo rinoceronte son los cuernos que se proyectan desde su cabeza. Los machos suelen tener cuernos notables, similares a los de los rinocerontes, que utilizan en competencias por apareamiento y para defender su territorio. Las hembras también pueden tener cuernos, pero generalmente son más pequeños o están ausentes.<br>
+                  <br><b class="verde">Color: </b>Su coloración varía desde tonos marrones, negros o incluso grises. Algunas especies muestran patrones llamativos, como manchas, rayas o protuberancias en su caparazón, que pueden ser de diferentes tonalidades.<br>
+                  <br><b class="verde">Cabeza: </b> Su cabeza es ancha y a menudo está equipada con mandíbulas poderosas que les permiten masticar madera y otros materiales duros. Estas mandíbulas pueden ser utilizadas para defenderse o para el corte de alimentos.<br>
+                  <br><b class="verde">Patas: </b>Tienen patas fuertes y robustas que les permiten excavar y trepar con facilidad. Aunque su vuelo es limitado, son capaces de volar distancias cortas, pero principalmente se desplazan caminando o volando en cortas distancias.<br>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item color1 texto">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Habitad y comportamiento
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Estos escarabajos suelen habitar en zonas tropicales y subtropicales, donde se alimentan de frutas, savia, hojas y, en algunos casos, madera en descomposición. Son principalmente nocturnos y se esconden durante el día bajo troncos, hojas o en el suelo.<br>
+                  <br>Aunque a menudo se los considera plagas en áreas agrícolas debido a su capacidad para dañar cultivos, descomponen materia orgánica y juegan un papel crucial en los ecosistemas al contribuir al proceso de descomposición y reciclaje de nutrientes.<br>
+                  <br>El escarabajo rinoceronte se encuentra en varias regiones de México, principalmente en áreas tropicales y subtropicales. Algunos estados donde se puede hallar esta especie y otras variedades de escarabajos rinoceronte son Chiapas, Veracruz, Oaxaca y Tabasco.
+                  <pre>
+                           <img class="centro" style="height: 300px; width: 800px; text-align: center;" src="Imagenes/eRinoceronteMapa.jpg"></div>
+                </pre>
+            </div>
+            </div>
+            <div class="accordion-item color1 texto">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Alimentación
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> El escarabajo rinoceronte es generalmente herbívoro y se alimenta de una variedad de materiales orgánicos, aunque la dieta específica puede variar entre especies y etapas de su vida. Sus fuentes de alimentación pueden incluir frutas o sabia. <br>
+                    <br>Se sabe que consumen hojas y otros materiales vegetales. Algunas especies pueden preferir ciertos tipos de hojas o plantas. Algunos escarabajos rinoceronte se alimentan de madera en descomposición, contribuyendo al proceso de descomposición y reciclaje de nutrientes en los ecosistemas forestales. Además, estos escarabajos pueden ingerir otros materiales orgánicos en descomposición, como restos de animales o excrementos.
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item color1 texto">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour" >
+                    Datos curiosos
+                  </button>
+                </h2>
+                <div id="flush-collapsefour" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">• Los machos tienen cuernos notables, pero estos no están hechos de hueso, sino de quitina, el mismo material que compone su exoesqueleto. Estos cuernos pueden llegar a representar hasta un tercio de la longitud total del escarabajo y son utilizados en luchas por el apareamiento y la defensa del territorio.<br>
+                    • A pesar de su tamaño, los escarabajos rinoceronte son increíblemente fuertes. Se ha informado que tienen la capacidad de levantar objetos que son hasta 850 veces más pesados que ellos mismos, gracias a sus potentes mandíbulas. <br>
+                    • Algunas especies de escarabajos rinoceronte pueden tener una vida útil bastante prolongada en comparación con otros insectos. Algunos individuos pueden vivir entre 2 y 3 años, lo que es relativamente largo para un insecto.<br>
+                    • Por su tamaño imponente, belleza y singularidad, los escarabajos rinoceronte son muy valorados por los coleccionistas de insectos. Algunas especies raras o con características únicas pueden ser objeto de gran interés y alcanzar precios elevados en el mercado de colección.<br>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item color1 texto">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed rounded color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive" >
+                    Relacionados
+                  </button>
+                </h2>
+                <div id="flush-collapsefive" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample" >
+                  <div class="accordion-body">
+                    <div class="card text-bg-dark">
+                      <!-- Hacer funcionar el link a bosque -->
+                      <a href=" Link de ponks">
+                      <img src="Imagenes/sabana.jpg" class="card-img" style="width: 100%; height: 300px;" ></a>
+                      <div class="card-img-overlay ">
+                        <h5 class="card-title">Bichos que habitan en la sabana</h5>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <br><br>
+
+    </div>
+    </div>
+     <!-- Footer -->
+     <footer>
+      <div class="container-fluid texto">
+        <div class="row p-5 bg-black">
+          <div class="col-3">
+            <p class="h3">BugWeb</p>
+          </div>
+          <div class="col-4">
+            <p class="h5">Integrantes</p>
+            <pre class="text-secondary letra">
+Gerson Emmanuel Contreras Gonzáles (202237583)
+Pablo Ivan Ibarra Valencia                      (202241171)
+Bernardo Palacios Caballero                  (202246622)
+Rodrigo Robledo Ordoñez                      (202250332)
+Fernando Sanchez Schiaffini                  (202253429)
+            </pre>
+          </div>
+          <div class="col-3">
+            <p class="h5">Materia</p>
+            <pre class="text-secondary letra">
+Herramientas Web
+Roberto Elvira Enriquez
+NRC: 11994
+            </pre>
+          </div>
+          <div class="col-2">
+            <p class="h5">Si nos quieres demandar</p>
+            <pre class="text-secondary letra">
+<a class="text-decoration-none text-secondary" href="BugWeb_AvisoLegal.html">Avisos Legales</a>
+<a class="text-decoration-none text-secondary" href="BugWeb_Copyright.html">Copyright </a>
+<a class="text-secondary text-decoration-none" href="https://getbootstrap.com">Bootstrap</a>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

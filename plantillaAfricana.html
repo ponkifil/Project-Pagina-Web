@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla General</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/plantillaichos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    <script type="text/javascript" src="css/bootstrap/js/bootstrap.bundle.js"></script>
+</head>
+    <!-- Barra del logo-->
+<body class="bodyP">
+  <nav class="navbar navbar-dark fixed-inicio nav bg-black">
+    <div class="container-fluid">
+      <div class=" nombre-pagina h3">
+        <a href="proyecto.html" class="text-decoration-none text-white">
+          <img src="img/logos/lotus-with-hands-1889661_1280.png" width="50" height="50">
+          BugWeb
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">BugWeb</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active letra" aria-current="page" href="file:///C:/xampp/htdocs/tecweb/proyecto/proyecto.html">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="BugWeb_Nosotros.html">Nosotros</a>
+            </li>
+            <a href="BugWeb_Login.html" target="_blank">
+              <button type="button" class="btn btn-outline-success">Ingresa el Insecto</button>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+</nav>
+
+    <!-- Contenedores de la info-->
+    <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3">
+    <!-- Imagenes Bichos-->
+            <div id="carouselExampleIndicators" class="carousel slide w-100 rounded-img">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Imagenes/pAfricana1.jpg" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagenes/pAfricana2.jpg" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagenes/pAfricana3.jpg" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+           </div>
+          </div>
+    <!-- Tarjeta de Información -->
+          <div class="col rounded-card">
+            <div class="p-3 ">
+                <div class="card rounded color3"  style="width: 35rem; ">
+                    <div class="card-body color1 texto" style="height: 27rem;">
+                      <h1 class="card-title " style="font-size: 70px;">Polilla</h1>
+                      <h6 class="card-subtitle mb-2 text-body-secondary " style="font-size: 50px;">Africana</h6>
+                      <p class="card-text h3" align="left" style="font-size: 25px;" > <b class="verde">Familia:</b> Saturniidae <br><br> <b class="verde">Longevidad:</b> 3 a 15 días <br><br> <b class="verde">Nombre cientifico: </b> Argema mimosae <br><br> <b class="verde">Estado: </b>No protegida</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    <!-- Despliegue de información -->
+    <div class="container ">
+        <div class="accordion accordion-flush w-100 rounded" id="accordionFlushExample">
+
+            <div class="accordion-item color1 texto rounded">
+              <h2 class="accordion-header ">
+                <button class="accordion-button collapsed rounded color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Descripción física
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    La polilla africana, específicamente la polilla de la seda africana, es una especie fascinante.<br>
+                  <br><b class="verde">Tamaño:</b> La polilla africana tiene un tamaño considerable, siendo una de las especies de polillas más grandes. Sus alas pueden alcanzar entre 10 y 15 centímetros de envergadura, lo que las convierte en insectos imponentes y visibles.<br>
+                  <br><b class="verde">Color: </b>Las alas de la polilla de la seda africana suelen tener colores terrosos, marrones o grises. A menudo presentan patrones intrincados y variados, con líneas o marcas más claras que contrastan con el fondo oscuro, brindando camuflaje durante su reposo.<br>
+                  <br><b class="verde">Antenas: </b>Poseen antenas plumosas que pueden ser largas y llamativas, utilizadas para detectar feromonas y rastrear a sus parejas para la reproducción. Su cabeza suele ser pequeña en proporción al tamaño de su cuerpo, con grandes ojos facetados que les proporcionan una excelente visión nocturna.<br>
+                  <br><b class="verde">Cuerpo: </b>La polilla africana tiene un cuerpo robusto y segmentado, con tres partes distintas: cabeza, tórax y abdomen. En su fase adulta, su abdomen suele ser grande y redondeado, debido a la acumulación de grasa y nutrientes para el período de apareamiento y puesta de huevos.<br>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item color1 texto">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Habitad y comportamiento
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">La polilla de la seda africana tiene un hábitat y comportamiento específico que se relaciona estrechamente con su ciclo de vida y adaptaciones. <br>
+                  <br>La polilla africana prefiere hábitats con una vegetación densa y diversa, típicamente presentes en los bosques tropicales y subtropicales. Pueden encontrarse en áreas de selvas tropicales húmedas, así como en bosques de montaña con vegetación exuberante.<br>
+                  <br>Estas polillas dependen de árboles específicos para su alimentación y reproducción. Suelen habitar en áreas donde se encuentran los árboles que les sirven de huéspedes para depositar sus huevos. Se alimentan típicamente de plantas como eucaliptos, sauces, árboles frutales y diversas especies de plantas leñosas. En cuanto a su presencia en México, su distribución se encuentra principalmente en regiones cálidas y tropicales, aunque es importante tener en cuenta que su distribución puede variar y no se encuentra en todos los estados mexicanos. Sin embargo, puede estar presente en estados como Chiapas, Veracruz, Oaxaca y algunas zonas de la región sur.
+                  <pre>
+                           <img class="centro" style="height: 300px; width: 800px; text-align: center;" src="Imagenes/pAfricanaMapa.jpg"></div>
+                </pre>
+            </div>
+            </div>
+            <div class="accordion-item color1 texto">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Alimentación
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Durante su fase larval, las orugas de la polilla africana se alimentan de hojas de árboles específicos que sirven como sus plantas hospederas. Consumen grandes cantidades de follaje de árboles como eucaliptos, sauces, árboles frutales y otras especies de plantas leñosas que les proporcionan los nutrientes necesarios para su crecimiento.<br>
+                    <br>Una vez que emergen como polillas adultas, su principal enfoque ya no es alimentarse, sino más bien reproducirse. Las polillas adultas pueden tomar pequeñas cantidades de néctar de flores para obtener energía, pero su sistema digestivo está menos desarrollado en esta etapa, por lo que no dependen en gran medida de la alimentación.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item color1 texto">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour" >
+                    Datos curiosos
+                  </button>
+                </h2>
+                <div id="flush-collapsefour" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">• Las larvas de la polilla africana tejen capullos de seda particularmente resistentes y gruesos. Estos capullos son lo suficientemente densos como para proteger a las crisálidas durante su transformación en polillas adultas, siendo utilizados por algunas comunidades locales para la fabricación de textiles y artesanías.<br>
+                    •Son una de las especies de polillas más grandes, con una envergadura que puede alcanzar hasta 15 centímetros. Su tamaño y apariencia llamativa, junto con sus patrones en las alas, las convierten en un espectáculo impresionante cuando están en vuelo. <br>
+                    •El contacto con las escamas o el polvo de las alas y cuerpos de estas polillas puede causar reacciones alérgicas en algunas personas sensibles, como irritación en la piel o problemas respiratorios.<br>
+                    •Las larvas de la polilla de la seda africana tienen una dieta muy específica y se alimentan exclusivamente de ciertas especies de plantas hospederas, lo que las hace dependientes de la disponibilidad de estas plantas para su subsistencia.<br>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item color1 texto">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed rounded color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive" >
+                    Relacionados
+                  </button>
+                </h2>
+                <div id="flush-collapsefive" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample" >
+                  <div class="accordion-body">
+                    <div class="card text-bg-dark">
+                      <!-- Hacer funcionar el link a bosque -->
+                      <a href=" Link de ponks">
+                      <img src="Imagenes/sabana.jpg" class="card-img" style="width: 100%; height: 300px;" ></a>
+                      <div class="card-img-overlay ">
+                        <h5 class="card-title">Bichos que habitan en la sabana</h5>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <br><br>
+
+    </div>
+    </div>
+     <!-- Footer -->
+     <footer>
+      <div class="container-fluid texto">
+        <div class="row p-5 bg-black">
+          <div class="col-3">
+            <p class="h3">BugWeb</p>
+          </div>
+          <div class="col-4">
+            <p class="h5">Integrantes</p>
+            <pre class="text-secondary letra">
+Gerson Emmanuel Contreras Gonzáles (202237583)
+Pablo Ivan Ibarra Valencia                      (202241171)
+Bernardo Palacios Caballero                  (202246622)
+Rodrigo Robledo Ordoñez                      (202250332)
+Fernando Sanchez Schiaffini                  (202253429)
+            </pre>
+          </div>
+          <div class="col-3">
+            <p class="h5">Materia</p>
+            <pre class="text-secondary letra">
+Herramientas Web
+Roberto Elvira Enriquez
+NRC: 11994
+            </pre>
+          </div>
+          <div class="col-2">
+            <p class="h5">Si nos quieres demandar</p>
+            <pre class="text-secondary letra">
+<a class="text-decoration-none text-secondary" href="BugWeb_AvisoLegal.html">Avisos Legales</a>
+<a class="text-decoration-none text-secondary" href="BugWeb_Copyright.html">Copyright </a>
+<a class="text-secondary text-decoration-none" href="https://getbootstrap.com">Bootstrap</a>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

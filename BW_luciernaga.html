@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla General</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS_BW_Insectos/BW_insectos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    <script type="text/javascript" src="CSS_BW_Insectos/bootstrap/js/bootstrap.bundle.js"></script>
+</head>
+    <!-- Barra del logo-->
+<body class="bodyP">
+  <nav class="navbar navbar-dark fixed-inicio nav bg-black">
+    <div class="container-fluid">
+      <div class=" nombre-pagina h3">
+        <a href="proyecto.html" class="text-decoration-none text-white">
+          <img src="img/logos/lotus-with-hands-1889661_1280.png" width="50" height="50">
+          BugWeb
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">BugWeb</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active letra" aria-current="page" href="file:///C:/xampp/htdocs/tecweb/proyecto/proyecto.html">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="BugWeb_Nosotros.html">Nosotros</a>
+            </li>
+            <a href="BugWeb_Login.html" target="_blank">
+              <button type="button" class="btn btn-outline-success">Ingresa el Insecto</button>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+</nav>
+
+    <!-- Contenedores de la info-->
+    <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3">
+    <!-- Imagenes Bichos-->
+            <div id="carouselExampleIndicators" class="carousel slide w-100 rounded-img">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagenes/luciernaga1.png" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/luciernaga2.png" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/luciernaga3.png" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+           </div>
+          </div>
+    <!-- Tarjeta de Información -->
+          <div class="col rounded-card">
+            <div class="p-3 ">
+                <div class="card rounded color3"  style="width: 35rem; ">
+                    <div class="card-body color1 texto" style="height: 27rem;">
+                      <h1 class="card-title " style="font-size: 70px;"> </h1>
+                      <h6 class="card-subtitle mb-2 text-body-secondary " style="font-size: 50px;"> Luciernaga </h6>
+                      <p class="card-text h3" align="left" style="font-size: 25px;" > <b class="verde">Familia:</b> Lampyridae <br><br> <b class="verde">Longevidad:</b> De 3 seamanas de 2 meses <br><br> <b class="verde">Nombre cientifico: </b> Photinus pyralis  <br><br> <b class="verde">Estado: </b> Amenazada </p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    <!-- Despliegue de información -->
+    <div class="container ">
+        <div class="accordion accordion-flush w-100 rounded" id="accordionFlushExample">
+
+            <div class="accordion-item color1 texto rounded">
+              <h2 class="accordion-header ">
+                <button class="accordion-button collapsed rounded color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Descripción física
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Se caracterizan por poseer un par de antenas delgadas y articuladas, élitros y un protórax modificado de forma que casi cubre la cabeza. Los élitros son blandos en comparación con otros coleópteros. En la mayoría de las especies es muy notorio el dimorfismo sexual<br>
+                  <br><b class="verde">Tamaño:</b>  El tamaño de las luciérnagas varía, pero generalmente son pequeñas, con longitudes que van desde unos pocos milímetros hasta alrededor de 2 centímetros.<br>
+                  <br><b class="verde">Color: </b>  La mayoría de las luciérnagas tienen un color de cuerpo que puede ser amarillo, verde o marrón. Algunas especies emiten luz de colores como verde, amarillo o rojo.<br>
+                  <br><b class="verde">Alas: </b>  Tienen dos pares de alas membranosas, que son utilizadas principalmente para el vuelo. Las alas pueden ser translúcidas y a menudo tienen patrones distintivos.<br>
+                  <br><b class="verde">Bioluminiscencia: </b>  Una característica única de las luciérnagas es su capacidad para producir luz por medio de la bioluminiscencia, un proceso químico que ocurre en su abdomen.<br>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item color1 texto">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Habitad y comportamiento
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Se distribuyen en regiones cálidas o templadas con presencia de humedad, y se encuentran a menudo en ciertas partes de Europa, Asia y América.<br>
+                  <br>Las luciérnagas prefieren hábitats húmedos y se encuentran comúnmente en áreas con vegetación cercana al agua, como bosques, praderas y jardines. La calidad del hábitat es crucial, ya que la contaminación lumínica puede interferir con sus señales de apareamiento.<br>
+                      Son criaturas muy timidas que se veran la mayor parte del tiempo durante la noche gracias a sus cuerpos bioluminicentes, suelen vivir en grandes grupos de luciernagas y no tiene un orden social definidido
+                  <br>
+                  <pre>
+                           <img class="centro" style="height: 300px; width: 800px; text-align: center;" src="Imagenes/aCarpinteraMapa.jpg"></div>
+                </pre>
+            </div>
+            </div>
+            <div class="accordion-item color1 texto">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Alimentación
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> Las luciernagas son criaturas interesantes ya que igual son onmivoras, principamente cuando son larvas:<br>
+                    <br>Las luciérnagas en su etapa adulta no se alimentan o lo hacen muy poco. La principal actividad de la alimentación ocurre en su etapa de larva, donde se alimentan de pequeños invertebrados, caracoles y, en algunos casos, incluso de otras luciérnagas.
+
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item color1 texto">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour" >
+                    Datos curiosos
+                  </button>
+                </h2>
+                <div id="flush-collapsefour" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">•Luz de Apareamiento: La bioluminiscencia de las luciérnagas se utiliza principalmente en el proceso de apareamiento. Cada especie tiene su patrón de luz único que ayuda a las luciérnagas a identificar a sus posibles compañeros.<br>
+                    •Química de la Luz: La luz emitida por las luciérnagas es el resultado de una reacción química enzimática en su abdomen que involucra la luciferina y la enzima luciferasa.<br>
+                    •Sensibilidad Ambiental: Las luciérnagas son sensibles a la contaminación lumínica, que puede interferir con sus señales de apareamiento. La preservación de hábitats oscuros es esencial para su supervivencia.<br>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item color1 texto">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed rounded color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive" >
+                    Relacionados
+                  </button>
+                </h2>
+                <div id="flush-collapsefive" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample" >
+                  <div class="accordion-body">
+                    <div class="card text-bg-dark">
+                      <!-- Hacer funcionar el link a bosque -->
+                      <a href=" Link de ponks">
+                      <img src="imagenes/selva_relacion1.png" class="card-img" style="width: 100%; height: 300px;" ></a>
+                      <div class="card-img-overlay ">
+                        <h5 class="card-title">Bichos que habitan en el bosque</h5>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <br><br>
+
+    </div>
+    </div>
+     <!-- Footer -->
+     <footer>
+      <div class="container-fluid texto">
+        <div class="row p-5 bg-black">
+          <div class="col-3">
+            <p class="h3">BugWeb</p>
+          </div>
+          <div class="col-4">
+            <p class="h5">Integrantes</p>
+            <pre class="text-secondary letra">
+Gerson Emmanuel Contreras Gonzáles (202237583)
+Pablo Ivan Ibarra Valencia                      (202241171)
+Bernardo Palacios Caballero                  (202246622)
+Rodrigo Robledo Ordoñez                      (202250332)
+Fernando Sanchez Schiaffini                  (202253429)
+            </pre>
+          </div>
+          <div class="col-3">
+            <p class="h5">Materia</p>
+            <pre class="text-secondary letra">
+Herramientas Web
+Roberto Elvira Enriquez
+NRC: 11994
+            </pre>
+          </div>
+          <div class="col-2">
+            <p class="h5">Si nos quieres demandar</p>
+            <pre class="text-secondary letra">
+<a class="text-decoration-none text-secondary" href="BugWeb_AvisoLegal.html">Avisos Legales</a>
+<a class="text-decoration-none text-secondary" href="BugWeb_Copyright.html">Copyright </a>
+<a class="text-secondary text-decoration-none" href="https://getbootstrap.com">Bootstrap</a>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <script type="text/javascript" src="CSS-JS/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>

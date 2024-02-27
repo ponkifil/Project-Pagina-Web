@@ -1,0 +1,158 @@
+.verde {
+    background: linear-gradient(to bottom right, #0b6863, #228b22);
+}
+
+
+.pantalla{
+    background: #333333 ;
+    border: solid 1px black;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #000000;
+    color: #ECEFE3;
+}
+
+.formulario{
+    max-width: 400px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.capturados {
+    max-width: 400px;
+    padding: 20px;
+    opacity: 0;
+}
+
+.titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario div input{
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid #0b6863;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px #0b6863;
+}
+
+.formulario div{
+    margin-bottom: 15px;
+    margin: 20px;
+}
+
+.formulario div i{
+    position: absolute;
+    padding: 10px;
+}
+
+.capturados div output{
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid #ECEFE3;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px #ECEFE3;
+}
+
+.capturados div{
+    margin-bottom: 15px;
+    margin: 20px;
+}
+
+.capturados div i{
+    position: absolute;
+    padding: 10px;
+}
+
+.err-icon{
+    color: red;
+    opacity: 0;
+}
+
+.ok-icon{
+    color: green;
+    opacity: 0;
+}
+
+.error{
+    color: red;
+    font-size: 13px;
+
+}
+
+.enviar{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom right, #0b6863, #228b22);
+    border: 1px solid #0b6863;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.limpiar{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom right, #dc143c,#620014);
+    border: 1px solid #dc143c;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
+}
+
+input{
+    width: 300px;
+    height: 50px;
+    background: #333333;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 0 15px;
+    box-shadow: 0 0 10px #0b6863;
+    color: #ECEFE3;
+    font-size: 16px;
+}
+
+input::placeholder{
+    color: #ECEFE3;
+}
+
+select{
+    width: 300px;
+    height: 50px;
+    background: #333333;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 0 15px;
+    box-shadow: 0 0 10px #0b6863;
+    color: #ECEFE3;
+    font-size: 16px;
+}
+
+
+ textarea{
+    width: 300px;
+    height: 50px;
+    background: #333333;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 0 15px;
+    box-shadow: 0 0 10px #0b6863;
+    color: #ECEFE3;
+    font-size: 16px;
+ }
+

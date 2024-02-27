@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BugWeb Login</title>
+    <link rel="stylesheet" href="CSS_BW_Login/BugWeb_Login.css">
+    <link rel="stylesheet" href="CSS_BW_Login/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script type="text/javascript" src="JS_BW_Login/BugWeb_Login.js" ></script>
+</head>
+<body class="verde">
+    <div class="container">
+        <div class="pantalla">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10 row">
+                    <h1>Registro de Usuario de BugWeb</h1>
+                    <hr>
+
+                    <!--AQUI EMPIEZA LA PARTE IZQUIEDA DEL LOGIN-->
+
+                    <form class="formulario col-6">
+                        <div class="titulo">
+                            Login
+                        </div>
+                        <div>
+                            <label>Nombre (s)</label>
+                            <br>
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="username" id="nombreUsuario" placeholder="Username">
+                            <i id="u-err" class="fas fa-exclamation-circle err-icon"></i>
+                            <i id="u-ok" class="fas fa-check-circle ok-icon"></i>
+                            <div id="errorUsuario" class="error"></div>
+                        </div>
+
+                        <div>
+                            <label>Apellidos</label>
+                            <br>
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="surname" id="apellidoUsuario" placeholder="Surname">
+                            <i id="a-err" class="fas fa-exclamation-circle err-icon"></i>
+                            <i id="a-ok" class="fas fa-check-circle ok-icon"></i>
+                            <div id="errorApellidoUsuario" class="error"></div>
+                        </div>
+
+                        <div>
+                            <label>Correro electronico</label>
+                            <br>
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="email" id="eMail" placeholder="abc@correo.com">
+                            <i id="mail-err" class="fas fa-exclamation-circle err-icon"></i>
+                            <i id="mail-ok" class="fas fa-check-circle ok-icon"></i>
+                            <div id="errorCorreo" class="error"></div>
+                        </div>
+
+                        <div>
+                            <label>Contraseña</label>
+                            <br>
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="password" id="Pasword" placeholder="Contraseña">
+                            <i id="pas-err" class="fas fa-exclamation-circle err-icon"></i>
+                            <i id="pas-ok" class="fas fa-check-circle ok-icon"></i>
+                            <div id="errorPasword" class="error"></div>
+                        </div>
+                        
+                        <div>
+                            <button type="button" class="enviar" onclick="enviar()">Enviar</button>
+                            <button type="button" class="limpiar" onclick="limpiar()">Limpiar</button>
+                        </div>
+
+                    </form>
+
+                    <!-- AQUI EMPIEZA LA PARTE DERECHA DEL LOGIN -->
+
+                    <div class="capturados col-6" id="capturados">
+                        <div class="titulo">
+                            Bienvenido a BugWeb
+                        </div>
+                        <div>
+                            <div>
+                                <label>Hola, ¿cómo se encuentra el día de hoy?</label>
+                                <p type="text" id="o-usuario"></p>
+                                <hr>
+                            </div>
+                    
+                            <section>
+                                <div>
+                                    <h3>Registra un Insecto</h3>
+                                </div>
+                    
+                                <div>
+                                    <h4>Nombre del Insecto</h4>
+                                    <input type="text" aria-label="Escriba el nombre del Insecto" placeholder="Nombre del Insecto">
+                                </div>
+                    
+                                <div>
+                                    <h4>Tipo Insecto</h4>
+                                    <select aria-label="Default select example">
+                                        <option selected>Seleccione un Insecto</option>
+                                        <option value="1">Araña</option>
+                                        <option value="2">Abeja</option>
+                                        <option value="3">Escarabajo</option>
+                                        <option value="4">Hormiga</option>
+                                        <option value="5">Mariposa</option>
+                                        <option value="6">Oruga</option>
+                                    </select>
+                                </div>
+                    
+                                <div>
+                                    <h4>Bioma</h4>
+                                    <select aria-label="Default select example">
+                                        <option selected>Seleccione un Bioma</option>
+                                        <option value="1">Bosque</option>
+                                        <option value="2">Selva</option>
+                                        <option value="3">Sabana</option>
+                                        <option value="4">Pradera</option>
+                                        <option value="5">Desierto</option>
+                                        <option value="6">Costa</option>
+                                    </select>
+                                </div>
+                    
+                                <div>
+                                    <h4>Fotos</h4>
+                                    <div class="mb-3">
+                                        <label for="formFileMultiple" class="form-label">Ingrese Fotos del Insecto</label>
+                                        <input type="file" id="formFileMultiple" multiple>
+                                    </div>
+                                </div>
+                    
+                                <div>
+                                    <h4>Características</h4>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1">Características Principales</label>
+                                        <textarea id="exampleFormControlTextarea1" rows="3" placeholder="Características"></textarea>
+                                    </div>
+                                </div>
+                    
+                                <div>
+                                    <button type="button" class="enviar" onclick="subir_insecto()">Subir Insecto</button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    
+                    <!-- ESTE CODIGO COMENTADO ES LA MUESTRA DE LA CAPTURA DE DATOS EN EL LOGIN-->
+
+                            <!--
+                            <div>
+                                <label>Apellidos</label>
+                                <br>
+                                <i class=" fas fa-user"></i>
+                                <output type="text" id="o-apellido"></output>
+                            </div>
+
+                            <div>
+                                <label>Correo electronico</label>
+                                <br>
+                                <i class="fas fa-envelope"></i>
+                                <output type="text" id="o-correo"></output>
+                            </div>
+
+                            <div>
+                                <label>Contraseña</label>
+                                <br>
+                                <i class="fas fa-lock"></i>
+                                <output type="text" id="o-contraseña"></output>
+                            </div>
+                        -->
+                
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

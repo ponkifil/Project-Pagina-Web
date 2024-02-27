@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla General</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/plantillaichos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    <script type="text/javascript" src="css/bootstrap/js/bootstrap.bundle.js"></script>
+</head>
+    <!-- Barra del logo-->
+<body class="bodyP">
+  <nav class="navbar navbar-dark fixed-inicio nav bg-black">
+    <div class="container-fluid">
+      <div class=" nombre-pagina h3">
+        <a href="proyecto.html" class="text-decoration-none text-white">
+          <img src="img/logos/lotus-with-hands-1889661_1280.png" width="50" height="50">
+          BugWeb
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">BugWeb</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active letra" aria-current="page" href="file:///C:/xampp/htdocs/tecweb/proyecto/proyecto.html">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="BugWeb_Nosotros.html">Nosotros</a>
+            </li>
+            <a href="BugWeb_Login.html" target="_blank">
+              <button type="button" class="btn btn-outline-success">Ingresa el Insecto</button>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+</nav>
+
+    <!-- Contenedores de la info-->
+    <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3">
+    <!-- Imagenes Bichos-->
+            <div id="carouselExampleIndicators" class="carousel slide w-100 rounded-img">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Imagenes/eAcorazado1.jpg" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagenes/eAcorazado2.jpeg" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagenes/eAcorazado3.jpg" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+           </div>
+          </div>
+    <!-- Tarjeta de Información -->
+          <div class="col rounded-card">
+            <div class="p-3 ">
+                <div class="card rounded color3"  style="width: 35rem; ">
+                    <div class="card-body color1 texto" style="height: 27rem;">
+                      <h1 class="card-title " style="font-size: 70px;">Escarabajo</h1>
+                      <h6 class="card-subtitle mb-2 text-body-secondary " style="font-size: 50px;">Acorazado</h6>
+                      <p class="card-text h3" align="left" style="font-size: 25px;" > <b class="verde">Familia:</b> Zopheridae    <br><br> <b class="verde">Longevidad:</b> 8 a 17 años <br><br> <b class="verde">Nombre cientifico: </b> Phloeodes diabolicus <br><br> <b class="verde">Estado: </b>No protegida</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    <!-- Despliegue de información -->
+    <div class="container ">
+        <div class="accordion accordion-flush w-100 rounded" id="accordionFlushExample">
+
+            <div class="accordion-item color1 texto rounded">
+              <h2 class="accordion-header ">
+                <button class="accordion-button collapsed rounded color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Descripción física
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    El escarabajo acorazado del desierto, también conocido como escarabajo rinoceronte del desierto, es una fascinante criatura con características distintivas.  <br>
+                  <br><b class="verde">forma:</b>  El escarabajo acorazado del desierto es robusto y grande, con una longitud que puede alcanzar los 5-6 centímetros. Su cuerpo está diseñado para resistir el entorno árido del desierto, con un caparazón duro y convexo que les proporciona protección contra depredadores y la deshidratación.<br>
+                  <br><b class="verde">Color: </b>Su caparazón, típicamente marrón o beige, está cubierto de protuberancias y surcos que le otorgan una apariencia rugosa y áspera. Esta textura ayuda a camuflarse entre la arena y proporciona una defensa adicional contra la pérdida de humedad.<br>
+                  <br><b class="verde">Cuernos: </b> Una de sus características más notables es el cuerno pronunciado que se encuentra en la cabeza de los machos. Este cuerno tiene un propósito principalmente para el apareamiento y la competencia entre machos por las hembras.<br>
+                  <br><b class="verde">Antenas y ojos: </b>Tienen antenas largas y delgadas que les ayudan a detectar olores y movimientos en su entorno. Sus ojos, situados en los extremos de la cabeza, les proporcionan una visión relativamente buena en su hábitat desértico.<br>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item color1 texto">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Habitad y comportamiento
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">El escarabajo acorazado del desierto es nativo de regiones desérticas y semiáridas, particularmente en áreas del norte de África, Oriente Medio y partes de Asia. Su hábitat principal incluye desiertos arenosos y áreas con suelos arenosos y escasamente vegetados.<br>
+                  <br>Durante el día, estos escarabajos se entierran bajo la arena para protegerse del calor abrasador del sol. Se entierran profundamente, utilizando sus patas fuertes y adaptadas para cavar, y permanecen inactivos hasta que las temperaturas disminuyen. Son más activos por la noche cuando las temperaturas son más frescas. Emergen de sus refugios subterráneos para buscar alimento, que suele consistir en materia vegetal, como hojas y raíces, así como detritus orgánicos.<br>
+                  <br>Aunque tienden a ser solitarios, pueden encontrarse en áreas donde los recursos son abundantes. En estos casos, compiten por comida y refugio, especialmente durante la temporada de reproducción. Los estados mexicanos donde podrías encontrar el escarabajo acorazado del desierto incluyen Sonora, Chihuahua y Baja California. 
+                  <pre>
+                           <img class="centro" style="height: 300px; width: 800px; text-align: center;" src="Imagenes/eAcorazadoMapa.jpg"></div>
+                </pre>
+            </div>
+            </div>
+            <div class="accordion-item color1 texto">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Alimentación
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> El escarabajo acorazado del desierto es principalmente herbívoro, y su dieta se compone principalmente de materia vegetal y detritus orgánicos que encuentran en su entorno desértico. Se alimentan de una variedad de fuentes vegetales, como hojas, raíces, cortezas y otros restos de plantas que pueden encontrar en el suelo del desierto. <br>
+                    <br> Estos escarabajos son conocidos por ser detritívoros, lo que significa que también se alimentan de materia orgánica en descomposición, como hojas secas, ramitas y restos de plantas muertas. Esta dieta les proporciona los nutrientes necesarios para sobrevivir en un entorno donde la disponibilidad de alimentos puede ser escasa.
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item color1 texto">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour" >
+                    Datos curiosos
+                  </button>
+                </h2>
+                <div id="flush-collapsefour" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">• Estos escarabajos son conocidos por su capacidad para recolectar agua de la niebla matutina y la humedad del aire a través de su caparazón. Los surcos y protuberancias en su superficie ayudan a condensar la humedad, permitiéndoles beber las gotas de agua que se acumulan.<br>
+                    • Se ha descubierto que estos escarabajos utilizan la Vía Láctea para orientarse durante sus viajes nocturnos. Se cree que utilizan la luz de la galaxia como una forma de mantener un rumbo recto en el desierto, ayudándoles a no perderse en la oscuridad. <br>
+                    • A pesar de su tamaño relativamente pequeño, estos escarabajos son increíblemente fuertes. Pueden cargar objetos hasta 850 veces su propio peso, lo que equivale a un humano levantando alrededor de 80 toneladas.<br>
+                    • En condiciones ideales, algunos escarabajos acorazados del desierto pueden vivir hasta varios años, a pesar de enfrentarse a un entorno desértico desafiante.
+                </div>
+            </div>
+              </div>
+              <div class="accordion-item color1 texto">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed rounded color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive" >
+                    Relacionados
+                  </button>
+                </h2>
+                <div id="flush-collapsefive" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample" >
+                  <div class="accordion-body">
+                    <div class="card text-bg-dark">
+                      <!-- Hacer funcionar el link a bosque -->
+                      <a href=" Link de ponks">
+                      <img src="Imagenes/desierto.jpg" class="card-img" style="width: 100%; height: 300px;" ></a>
+                      <div class="card-img-overlay ">
+                        <h5 class="card-title">Bichos que habitan en el desierto</h5>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <br><br>
+
+    </div>
+    </div>
+     <!-- Footer -->
+     <footer>
+      <div class="container-fluid texto">
+        <div class="row p-5 bg-black">
+          <div class="col-3">
+            <p class="h3">BugWeb</p>
+          </div>
+          <div class="col-4">
+            <p class="h5">Integrantes</p>
+            <pre class="text-secondary letra">
+Gerson Emmanuel Contreras Gonzáles (202237583)
+Pablo Ivan Ibarra Valencia                      (202241171)
+Bernardo Palacios Caballero                  (202246622)
+Rodrigo Robledo Ordoñez                      (202250332)
+Fernando Sanchez Schiaffini                  (202253429)
+            </pre>
+          </div>
+          <div class="col-3">
+            <p class="h5">Materia</p>
+            <pre class="text-secondary letra">
+Herramientas Web
+Roberto Elvira Enriquez
+NRC: 11994
+            </pre>
+          </div>
+          <div class="col-2">
+            <p class="h5">Si nos quieres demandar</p>
+            <pre class="text-secondary letra">
+<a class="text-decoration-none text-secondary" href="BugWeb_AvisoLegal.html">Avisos Legales</a>
+<a class="text-decoration-none text-secondary" href="BugWeb_Copyright.html">Copyright </a>
+<a class="text-secondary text-decoration-none" href="https://getbootstrap.com">Bootstrap</a>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

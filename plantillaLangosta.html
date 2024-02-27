@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla General</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/plantillaichos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    <script type="text/javascript" src="css/bootstrap/js/bootstrap.bundle.js"></script>
+</head>
+    <!-- Barra del logo-->
+<body class="bodyP">
+  <nav class="navbar navbar-dark fixed-inicio nav bg-black">
+    <div class="container-fluid">
+      <div class=" nombre-pagina h3">
+        <a href="proyecto.html" class="text-decoration-none text-white">
+          <img src="img/logos/lotus-with-hands-1889661_1280.png" width="50" height="50">
+          BugWeb
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">BugWeb</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active letra" aria-current="page" href="file:///C:/xampp/htdocs/tecweb/proyecto/proyecto.html">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="BugWeb_Nosotros.html">Nosotros</a>
+            </li>
+            <a href="BugWeb_Login.html" target="_blank">
+              <button type="button" class="btn btn-outline-success">Ingresa el Insecto</button>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+</nav>
+
+    <!-- Contenedores de la info-->
+    <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3">
+    <!-- Imagenes Bichos-->
+            <div id="carouselExampleIndicators" class="carousel slide w-100 rounded-img">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Imagenes/lMigratoria1.jpg" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagenes/lMigratoria2.jpeg" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagenes/lMigratoria3.jpg" class="d-block w-100" alt="Polilla Luna">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+           </div>
+          </div>
+    <!-- Tarjeta de Información -->
+          <div class="col rounded-card">
+            <div class="p-3 ">
+                <div class="card rounded color3"  style="width: 35rem; ">
+                    <div class="card-body color1 texto" style="height: 27rem;">
+                      <h1 class="card-title " style="font-size: 70px;">Langosta</h1>
+                      <h6 class="card-subtitle mb-2 text-body-secondary " style="font-size: 50px;">Migratoria</h6>
+                      <p class="card-text h3" align="left" style="font-size: 25px;" > <b class="verde">Familia:</b> Acrididae  <br><br> <b class="verde">Longevidad:</b> 10 meses<br><br> <b class="verde">Nombre cientifico: </b> Locusta migratoria <br><br> <b class="verde">Estado: </b>No protegida</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    <!-- Despliegue de información -->
+    <div class="container ">
+        <div class="accordion accordion-flush w-100 rounded" id="accordionFlushExample">
+
+            <div class="accordion-item color1 texto rounded">
+              <h2 class="accordion-header ">
+                <button class="accordion-button collapsed rounded color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Descripción física
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    La langosta migratoria es un insecto fascinante que se caracteriza por su apariencia distintiva y su comportamiento migratorio. <br>
+                  <br><b class="verde">Tamaño:</b> La langosta migratoria es un insecto de tamaño considerable, pudiendo alcanzar longitudes de hasta 10 a 12 centímetros. Su cuerpo está dividido en tres partes: la cabeza, el tórax y el abdomen. Presenta seis patas robustas y dos pares de alas.<br>
+                  <br><b class="verde">Color: </b> Su coloración puede variar dependiendo de la etapa en la que se encuentre. Las langostas jóvenes tienden a ser más verdosas o marrones, mientras que los adultos adquieren tonalidades más amarillas o marrones. Su exoesqueleto es duro y está cubierto por un patrón de espinas y protuberancias.<br>
+                  <br><b class="verde">Cabeza: </b>  La cabeza de la langosta migratoria es distintiva por sus ojos compuestos grandes y prominentes, antenas largas y robustas, y una boca poderosa adaptada para masticar vegetación. Sus mandíbulas fuertes les permiten alimentarse de una variedad de plantas.<br>
+                  <br><b class="verde">Torax y Alas: </b>El tórax alberga los músculos poderosos que permiten el movimiento de las patas y las alas. Las alas son membranosas y pueden ser cortas o largas, dependiendo de la edad y la especie. En reposo, las alas se pliegan sobre el abdomen, pero cuando están en vuelo se despliegan para permitirles volar largas distancias.<br>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item color1 texto">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Habitad y comportamiento
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> Las langostas migratorias son conocidas por su capacidad de adaptación a diferentes ambientes, pero generalmente se encuentran en áreas semiáridas y praderas tropicales. Prefieren hábitats cálidos y secos, donde la vegetación herbácea es abundante. Estos insectos tienden a habitar zonas con pastizales extensos, áreas de matorral y regiones donde hay vegetación que les sirva de alimento.<br>
+                  <br>En cuanto a su comportamiento, las langostas migratorias son reconocidas por su habilidad para formar enjambres y migrar en masa en busca de alimento. Cuando las condiciones ambientales, como la presencia de lluvias y vegetación fresca, son favorables, pueden reproducirse en grandes cantidades y provocar migraciones masivas en busca de comida.<br>
+                  <br>En México, las langostas migratorias se pueden encontrar en diferentes estados, especialmente en regiones donde las condiciones climáticas son propicias para su desarrollo. Algunos de los estados mexicanos donde se ha registrado la presencia de langostas migratorias son Sonora, Chihuahua, Coahuila, Durango, Zacatecas y San Luis Potosí.
+                  <pre>
+                           <img class="centro" style="height: 300px; width: 800px; text-align: center;" src="Imagenes/lMigratoriaMapa.jpg"></div>
+                </pre>
+            </div>
+            </div>
+            <div class="accordion-item color1 texto">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Alimentación
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> Las langostas migratorias son herbívoras y se alimentan principalmente de una variedad de plantas. Consumen una amplia gama de vegetación, incluyendo pastos, hojas, brotes tiernos, cultivos agrícolas y en ocasiones, arbustos y árboles jóvenes. Su dieta puede variar según la disponibilidad de alimentos en su entorno. <br>
+                    <br> Estos insectos tienen una capacidad notable para consumir grandes cantidades de vegetación en poco tiempo, lo que puede causar daños significativos a los cultivos y a la vegetación natural si se produce una infestación masiva. La voracidad de las langostas migratorias puede llevarlas a moverse en busca de áreas con alimentos frescos, lo que desencadena sus migraciones en busca de nuevas fuentes de alimento.
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item color1 texto">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour" >
+                    Datos curiosos
+                  </button>
+                </h2>
+                <div id="flush-collapsefour" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">• Las langostas migratorias tienen la capacidad de formar enormes enjambres que pueden contener millones de individuos. Estos enjambres pueden cubrir grandes distancias durante sus migraciones.<br>
+                    • Experimentan cambios físicos significativos a lo largo de su vida. Pasan por distintas etapas, desde el huevo hasta la ninfa y finalmente el estado adulto. En cada etapa, su aspecto y comportamiento varían. <br>
+                    •  Son reconocidas por sus migraciones masivas y pueden recorrer cientos de kilómetros en busca de alimento. Estos desplazamientos pueden tener un impacto significativo en la agricultura y el ecosistema local.<br>
+                </div>
+            </div>
+              </div>
+              <div class="accordion-item color1 texto">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed rounded color1 texto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive" >
+                    Relacionados
+                  </button>
+                </h2>
+                <div id="flush-collapsefive" class="accordion-collapse collapse color3" data-bs-parent="#accordionFlushExample" >
+                  <div class="accordion-body">
+                    <div class="card text-bg-dark">
+                      <!-- Hacer funcionar el link a bosque -->
+                      <a href=" Link de ponks">
+                      <img src="Imagenes/desierto.jpg" class="card-img" style="width: 100%; height: 300px;" ></a>
+                      <div class="card-img-overlay ">
+                        <h5 class="card-title">Bichos que habitan en el desierto</h5>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <br><br>
+
+    </div>
+    </div>
+     <!-- Footer -->
+    <footer>
+      <div class="container-fluid texto">
+        <div class="row p-5 bg-black">
+          <div class="col-3">
+            <p class="h3">BugWeb</p>
+          </div>
+          <div class="col-4">
+            <p class="h5">Integrantes</p>
+            <pre class="text-secondary letra">
+Gerson Emmanuel Contreras Gonzáles (202237583)
+Pablo Ivan Ibarra Valencia                      (202241171)
+Bernardo Palacios Caballero                  (202246622)
+Rodrigo Robledo Ordoñez                      (202250332)
+Fernando Sanchez Schiaffini                  (202253429)
+            </pre>
+          </div>
+          <div class="col-3">
+            <p class="h5">Materia</p>
+            <pre class="text-secondary letra">
+Herramientas Web
+Roberto Elvira Enriquez
+NRC: 11994
+            </pre>
+          </div>
+          <div class="col-2">
+            <p class="h5">Si nos quieres demandar</p>
+            <pre class="text-secondary letra">
+<a class="text-decoration-none text-secondary" href="BugWeb_AvisoLegal.html">Avisos Legales</a>
+<a class="text-decoration-none text-secondary" href="BugWeb_Copyright.html">Copyright </a>
+<a class="text-secondary text-decoration-none" href="https://getbootstrap.com">Bootstrap</a>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Inclutendo css porpio para crear nuestro estilos o modificar alguno de bootstrap y el propio css de bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--Logo que va a aparecer en la pestaña de la paigina-->
+    <link rel="icon" href="img/logos/lotus-with-hands-1889661_1280.png">
+    <!--Inlcuimos el javascript propio y de boostrap-->
+    <script type="text/javascript" src="js/reacciones.js"></script>
+    <script type="text/javascript" src="css/bootstrap/js/bootstrap.bundle.js"></script>
+    <title>Bioma Bosque</title>
+</head>
+<body>
+    <!-- Funcion nav, contiene las diferentes categorias y la funcion de busqueda-->
+    <nav class="navbar navbar-dark fixed-inicio nav bg-black">
+        <div class="container-fluid">
+            <div class=" nombre-pagina h3">
+              <a href="proyecto.html" class="text-decoration-none text-white">
+                <img src="img/logos/lotus-with-hands-1889661_1280.png" width="50" height="50">
+                BugWeb
+              </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">BugWeb</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active letra" aria-current="page" href="file:///C:/xampp/htdocs/tecweb/proyecto/proyecto.html">Principal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="BugWeb_Nosotros.html">Nosotros</a>
+                  </li>
+                  <a href="BugWeb_Login.html" target="_blank">
+                    <button type="button" class="btn btn-outline-success">Ingresa el Insecto</button>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <!-- Funcion de carrusel. muestra de algunos bosques,-->
+    <div class="row mt-6">
+        <div class="col-5"></div>
+        <div class="col-2">
+            <div class="container-fluid bg-black rounded-5 mid">
+                <h2>Desierto</h2>
+            </div>
+        </div>
+        <div class="col-5"></div>
+    </div>
+    <div class="row mb-5 mt-5">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="container-fluid bg-black rounded-5">
+                <div id="bosque-bioma" class="carousel slide">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/bioma-desierto/desert-1654439_1920.jpg" class="d-block w-100  h-100 rounded-5 mt-4 mb-4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bioma-desierto/emperor-93742_1920.jpg" class="d-block w-100 h-100 rounded-5 mt-4 mb-4" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bioma-desierto/grasshopper-6560033_1920.jpg" class="d-block w-100 h-100 rounded-5 mt-4 mb-4" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bioma-desierto/wadi-rum-5079834_1920.jpg" class="d-block w-100 h-100 mt-4 mb-4" >
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#bosque-bioma" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#bosque-bioma" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    <!--Acordeon, contiene la informacion del bioma-->
+    <div class="row mb-5 mt-5">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h1 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Descripcion General
+                    </button>
+                  </h1>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Los desiertos son biomas extremadamente áridos, caracterizados
+                        por bajas precipitaciones y temperaturas extremas. Estos vastos 
+                        paisajes presentan una escasa cobertura vegetal, con plantas adaptadas
+                        a la sequedad, como cactus y arbustos resistentes. La fauna del
+                        desierto ha evolucionado para sobrevivir en condiciones difíciles
+                        e incluye mamíferos como el camello y el coyote, así como reptiles
+                        como la serpiente de cascabel y el lagarto espinoso. Las aves, como
+                        el búho del desierto, también han adaptado su comportamiento para
+                        enfrentar las altas temperaturas diurnas y las noches frías. Los
+                        desiertos albergan formaciones geológicas impresionantes, como
+                        dunas de arena y cañones, y son vitales para la investigación científica
+                        sobre la adaptación a entornos extremos. A pesar de su apariencia inhóspita,
+                        los desiertos juegan un papel crucial en la ecología global y albergan una sorprendente
+                        diversidad de vida adaptada a la escasez de agua.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h1 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Flora
+                    </button>
+                  </h1>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La flora de los desiertos está adaptada 
+                        para sobrevivir en condiciones extremas de 
+                        aridez, altas temperaturas y variaciones climáticas significativas.
+                        Partes resaltantes de esta flora son:
+                        <br>
+                        1.-Cactus:
+                            <ul>
+                                <li>Los cactus son icónicos en los desiertos y han 
+                                    desarrollado adaptaciones, como hojas modificadas 
+                                    en espinas, para reducir la pérdida de agua a través de la transpiración.</li>
+                            </ul>
+                        2.-Sábilas (Agave):
+                            <ul>
+                                <li>Las sábilas, como el agave, tienen hojas gruesas 
+                                    y carnosas que almacenan agua para períodos secos.
+                                    Son conocidas por su resistencia en entornos áridos.</li>
+                            </ul>
+                        3.-Artemisas (Artemisia):
+                            <ul>
+                                <li>Estas plantas perennes tienen hojas
+                                    finamente divididas que reducen la pérdida de agua.
+                                    Algunas especies se encuentran en desiertos de todo el mundo.</li>
+                            </ul>
+                        4.-Hierbas Efímeras:
+                            <ul>
+                                <li>Algunas plantas de desierto son hierbas efímeras que
+                                    germinan y florecen rápidamente después de las lluvias,
+                                    aprovechando al máximo las condiciones temporales favorables.</li>
+                            </ul>
+                        5.-Árboles Adaptados:
+                            <ul>
+                                <li>En ciertos desiertos, como el desierto de Sonora,
+                                    se pueden encontrar árboles adaptados, como el palo verde
+                                    y la palmera datilera.</li>
+                            </ul>
+                        6.-Plantas Suculentas:
+                            <ul>
+                                <li>Además de los cactus y las sábilas,
+                                    otras plantas suculentas, como las euforbias,
+                                    almacenan agua en sus tejidos para sobrevivir durante períodos secos.</li>
+                            </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h1 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Fauna
+                    </button>
+                  </h1>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La fauna del desierto ha evolucionado 
+                        para adaptarse a las condiciones extremas de aridez y temperaturas extremas, pero son pocas las 
+                        especies las que pueden adaptarse a dichas condiciones.Algunas de las especies que pueden vivir en
+                        el desierto son: 
+                        <ul>
+                            <li>Camello: Adaptado para soportar largos 
+                                períodos sin agua, el camello es un mamífero 
+                                que se encuentra comúnmente en los desiertos. 
+                                Su capacidad para almacenar grasa en las jorobas 
+                                le permite sobrevivir durante días sin agua.</li>
+                            <li>Serpiente de cascabel: Serpiente venenosa se 
+                                encuentra en varios desiertos y utiliza su 
+                                veneno para cazar presas. Su característico 
+                                sonido de cascabel sirve como advertencia.</li>
+                            <li>Fennec: El fennec es un pequeño zorro
+                                adaptado a las altas temperaturas del desierto.
+                                Sus grandes orejas le ayudan a disipar el
+                                calor y a localizar presas.</li>
+                            <li>Jerbo: Pequeño roedor saltador que ha
+                                desarrollado extremidades traseras largas
+                                para moverse rápidamente sobre la arena y
+                                evitar el calor del suelo.</li>
+                            <li>Caracol del Desierto: Adaptado para resistir
+                                la deshidratación, este caracol ha desarrollado
+                                una concha que ayuda a retener la humedad.</li>
+                            <li>Coleópteros Nómadas: Algunos escarabajos nómadas
+                                del desierto son conocidos por recolectar y almacenar agua,
+                                utilizando técnicas únicas para sobrevivir en entornos secos.</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    <!-- Insectos encontrados en el area-->
+    <div class="row mb-5">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <div class="container-fluid rounded-5 bg-black">
+            <h2 class="mid">Insectos Relacionados</h2>
+            <div class="row">
+              <div class="col-3 mb-4">
+                <div class="cont">
+                  <div class="carta rounded-5">
+                    <div class="frente rounded-5">
+                      <img src="img/bioma-desierto/insect-relacionados/01leish-1.jpg" class="w-100 h-100 rounded-5"> 
+                      <h2 class="position-absolute bottom-0 start-50 translate-middle-x">Mosca Desierto</h2>
+                    </div>
+                    <div class="atras rounded-5">
+                        <a href="plantillaMosca.html" class="text-decoration-none text-white">
+                            <p class="mid fw-bold">Descripcion</p>
+                            <p class="mid">
+                                Especie de insecto adaptada a ambientes 
+                                áridos y desérticos. Con su cuerpo pequeño y 
+                                alas translúcidas, estas moscas han desarrollado 
+                                habilidades para resistir condiciones extremas de 
+                                calor y sequedad.
+                            </p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 mb-4">
+                <div class="cont">
+                  <div class="carta rounded-5">
+                    <div class="frente rounded-5">
+                      <img src="img/bioma-desierto/insect-relacionados/11481_preview.v1.jpg" class="w-100 h-100 rounded-5"> 
+                      <h2 class="position-absolute bottom-0 start-50 translate-middle-x">Escarabajo Acorazado</h2>
+                    </div>
+                    <div class="atras rounded-5">
+                        <a href="plantillaAcorazado.html" class="text-decoration-none text-white">
+                            <p class="mid fw-bold">Descripcion</p>
+                            <p class="mid">      
+                                Insecto fascinante conocido por su resistente exoesqueleto 
+                                y su forma distintiva. Con un cuerpo ovalado y robusto, este escarabajo 
+                                presenta prominentes cuernos en su cabeza.
+                            </p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 mb-4">
+                <div class="cont">
+                  <div class="carta rounded-5">
+                    <div class="frente rounded-5">
+                        <img src="img/bioma-desierto/insect-relacionados/insects-820485_1280.jpg" class="w-100 h-100 rounded-5"> 
+                        <h2 class="position-absolute bottom-0 start-50 translate-middle-x">Mosquito</h2>
+                    </div>
+                    <div class="atras rounded-5">
+                        <a href="plantillaMosquito.html" class="text-decoration-none text-white">
+                            <p class="mid fw-bold">Descripcion</p>
+                            <p class="mid">
+                                Insecto pequeño, generalmente de color gris o marrón,
+                                conocido por su zumbido distintivo.
+                            </p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 mb-4">
+                <div class="cont">
+                  <div class="carta rounded-5">
+                    <div class="frente rounded-5">
+                      <img src="img/bioma-desierto/insect-relacionados/Wanderheuschrecke-03.jpg" class="w-100 h-100 rounded-5"> 
+                      <h2 class="position-absolute bottom-0 start-50 translate-middle-x">Langosta Migratoria</h2>
+                    </div>
+                    <div class="atras rounded-5">
+                        <a href="plantillaLangosta.html" class="text-decoration-none text-white">
+                            <p class="mid fw-bold">Descripcion</p>
+                            <p class="mid">
+                                Insectos sociales conocidos por su capacidad para
+                                descomponer madera y celulosa. Estos insectos viven
+                                en colonias altamente organizadas que incluyen obreras,
+                                soldados y reproductores.
+                            </p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+    <!-- Footer de la pagina-->
+    <footer>
+        <div class="container-fluid">
+          <div class="row p-5 bg-black">
+            <div class="col-3">
+              <p class="h3">BugWeb</p>
+            </div>
+            <div class="col-4">
+              <p class="h5">Integrantes</p>
+              <pre class="text-secondary letra">
+Gerson Emmanuel Contreras Gonzáles (202237583)
+Pablo Ivan Ibarra Valencia                      (202241171)
+Bernardo Palacios Caballero                  (202246622)
+Rodrigo Robledo Ordoñez                      (202250332)
+Fernando Sanchez Schiaffini                  (202253429)
+              </pre>
+            </div>
+            <div class="col-3">
+              <p class="h5">Materia</p>
+              <pre class="text-secondary letra">
+Herramientas Web
+Roberto Elvira Enriquez
+NRC: 11994
+              </pre>
+            </div>
+            <div class="col-2">
+              <p class="h5">Si nos quieres demandar</p>
+              <pre class="text-secondary letra">
+<a class="text-decoration-none text-secondary" href="BugWeb_AvisoLegal.html">Avisos Legales</a>
+<a class="text-decoration-none text-secondary" href="BugWeb_Copyright.html">Copyright </a>
+<a class="text-secondary text-decoration-none" href="https://getbootstrap.com">Bootstrap</a>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
